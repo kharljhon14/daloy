@@ -1,16 +1,19 @@
+import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header>
+    <header className="shadow p-6 flex justify-between">
       <Link
         href="/"
-        passHref
+        aria-label="Daloy - Home"
+        className="flex items-center justify-center"
       >
-        <a aria-label="Daloy Home">
-          <h1>Daloy</h1>
-        </a>
+        <h1 className="text-4xl font-yesteryear text-purple-600">Daloy</h1>
       </Link>
+      <div>
+        <Button aria-label="Sign in button">Sign In</Button>
+      </div>
     </header>
   );
 }
