@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="shadow p-6 flex justify-between">
+    <header className="shadow p-4 flex justify-between">
       <Link
         href="/"
         aria-label="Daloy - Home"

@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
+      <body className="antialiased bg-gray-100">
         <Header />
-        {children}
+        <main className="px-4 my-8 w-screen">{children}</main>
       </body>
     </html>
   );
