@@ -17,10 +17,10 @@ export default function SidebarNavigation({ active: isActive }: Props) {
     >
       <aside className="w-full p-5">
         <nav className="flex flex-col gap-y-4 w-full">
-          <div className="border-b p-2">
+          <div className="border-b p-1">
             <Link
               href="/"
-              className="w-full flex items-center gap-3 p-3 pl-8 bg-purple-200 rounded-md"
+              className="w-full flex items-center gap-3 p-3 pl-8 bg-purple-200 rounded-md hover:bg-secondary transition-colors duration-300"
             >
               <FaFolder className="text-purple-400" /> <span>All Task</span>
             </Link>
@@ -28,15 +28,15 @@ export default function SidebarNavigation({ active: isActive }: Props) {
           <div className="border-b p-1">
             <Link
               href="/"
-              className="w-full flex items-center gap-3 p-3 pl-8 rounded-md "
+              className="w-full flex items-center gap-3 p-3 pl-8 rounded-md hover:bg-secondary transition-colors duration-300"
             >
               <FaPeopleGroup className="text-purple-400" /> <span>Team</span>
             </Link>
           </div>
-          <div className="border-b py-4 px-8">
+          <div className="border-b p-1">
             <Link
               href="/"
-              className="w-full flex items-center gap-3 rounded-md "
+              className="w-full flex items-center p-3 pl-8 gap-3 rounded-md hover:bg-secondary transition-colors duration-300"
             >
               <FaBuilding className="text-purple-400" /> <span>Company</span>
             </Link>
@@ -44,7 +44,7 @@ export default function SidebarNavigation({ active: isActive }: Props) {
           <div className="border-b p-1">
             <Link
               href="/"
-              className="w-full flex items-center gap-3 p-3 pl-8 rounded-md "
+              className="w-full flex items-center gap-3 p-3 pl-8 rounded-md hover:bg-secondary transition-colors duration-300"
             >
               <FaMessage className="text-purple-400" /> <span>Messages</span>
             </Link>
