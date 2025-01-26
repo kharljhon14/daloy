@@ -11,9 +11,9 @@ interface Props {
 export default function SidebarNavigation({ active: isActive }: Props) {
   return (
     <div
-      className={`flex top-[4.6rem] lg:top-24 ${
+      className={`flex top-[4.5rem] ${
         isActive ? 'left-0 opacity-100' : '-left-[160vw] opacity-0'
-      }  lg:left-4 bg-white fixed lg:opacity-100 lg:max-w-sm w-full h-screen shadow-md rounded-md z-30 transition-all duration-500 ease`}
+      }  lg:left-0 bg-white fixed lg:opacity-100 lg:max-w-sm w-full h-screen z-30 transition-all duration-500 ease`}
     >
       <aside className="w-full p-5">
         <nav className="flex flex-col gap-y-4 w-full">

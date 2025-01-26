@@ -4,12 +4,12 @@ import { FaCheck, FaRegClock, FaRegCopy } from 'react-icons/fa';
 
 export default function TaskSummaries() {
   return (
-    <div className="flex flex-col md:flex-row gap-4 max-w-4xl">
-      <Card className="flex-1 border-2 border-purple-800 bg-purple-50 max-w-xs relative shadow-md w-full mx-auto">
-        <div className="absolute right-0 top-0 bottom-0">
+    <div className="mb-6 flex flex-col md:flex-row gap-4 max-w-4xl">
+      <Card className="h-52 flex-1 flex items-start justify-center flex-col border-2 border-purple-800 bg-purple-50 max-w-xs relative shadow-md w-full mx-auto">
+        <div className="absolute right-0 inset-y-0">
           <Image
-            width={160}
-            height={160}
+            width={180}
+            height={180}
             src="/calendar.svg"
             alt="calendar"
           />
@@ -26,9 +26,9 @@ export default function TaskSummaries() {
         </CardContent>
       </Card>
 
-      <Card className="flex-1">
-        <CardHeader>
-          <div className="flex items-center justify-between">
+      <Card className="flex-1 h-52">
+        <CardHeader className="h-full">
+          <div className="flex w-full h-full items-center justify-between">
             <div className="flex flex-col gap-y-3">
               <div className="rounded-full p-3 bg-green-100 flex items-center justify-center w-fit">
                 <FaCheck className="text-green-500 text-2xl" />

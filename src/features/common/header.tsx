@@ -9,7 +9,7 @@ interface Props {
 
 export default function Header({ setActive, active }: Props) {
   return (
-    <header className="shadow p-4 flex justify-between fixed w-full top-0 bg-white z-10">
+    <header className="py-4 px-6 lg:px-20 flex justify-between fixed w-full top-0 bg-white z-10">
       <div className="flex items-center gap-4 justify-center">
         <button
           onClick={() => setActive(!active)}
