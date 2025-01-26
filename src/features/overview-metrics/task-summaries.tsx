@@ -1,11 +1,11 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Image from 'next/image';
-import { FaCheck, FaRegClock, FaRegCopy, FaRegPaperPlane } from 'react-icons/fa';
+import { FaCheck, FaRegClock, FaRegCopy } from 'react-icons/fa';
 
 export default function TaskSummaries() {
   return (
-    <div className="flex flex-col md:flex-row gap-4">
-      <Card className="flex-1 border-2 border-purple-500 bg-purple-50 max-w-xs relative shadow-md w-full mx-auto">
+    <div className="flex flex-col md:flex-row gap-4 max-w-4xl">
+      <Card className="flex-1 border-2 border-purple-800 bg-purple-50 max-w-xs relative shadow-md w-full mx-auto">
         <div className="absolute right-0 top-0 bottom-0">
           <Image
             width={160}

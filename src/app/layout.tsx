@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import './globals.css';
-import Header from '@/features/common/header';
+import MainLayout from '@/layouts/main-layout';
 
 export const metadata: Metadata = {
   title: 'Daloy',
@@ -16,8 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-gray-100">
-        <Header />
-        <main className="px-4 my-8 w-screen">{children}</main>
+        <MainLayout>{children}</MainLayout>
       </body>
     </html>
   );
