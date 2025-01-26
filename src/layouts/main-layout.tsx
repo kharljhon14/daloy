@@ -8,7 +8,7 @@ export default function MainLayout({ children }: PropsWithChildren) {
     <>
       <Nagivations />
       <div>
-        <main className="ml-0 lg:ml-96 px-6 lg:px-12 mt-20">{children}</main>
+        <main className="ml-0 lg:ml-80 px-6 lg:px-12 mt-20">{children}</main>
       </div>
     </>
   );

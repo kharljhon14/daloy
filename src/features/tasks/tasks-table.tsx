@@ -1,4 +1,5 @@
 'use client';
+import { Button } from '@/components/ui/button';
 import {
   Table,
   TableBody,
@@ -30,6 +31,9 @@ export default function TasksTable() {
               <TableHead>
                 <span>Last Update</span>
               </TableHead>
+              <TableHead className="text-left">
+                <span className="">Action</span>
+              </TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -39,6 +43,14 @@ export default function TasksTable() {
               <TableCell>In Queue</TableCell>
               <TableCell>Priority</TableCell>
               <TableCell>Yesterday</TableCell>
+              <TableCell className="">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                >
+                  ...
+                </Button>
+              </TableCell>
             </TableRow>
             <TableRow className="h-16 bg-gray-100 hover:bg-purple-50">
               <TableCell>Kharl</TableCell>
@@ -46,34 +58,14 @@ export default function TasksTable() {
               <TableCell>In Queue</TableCell>
               <TableCell>Priority</TableCell>
               <TableCell>Yesterday</TableCell>
-            </TableRow>
-            <TableRow className="h-16 hover:bg-purple-50">
-              <TableCell>Kharl</TableCell>
-              <TableCell>Landing page</TableCell>
-              <TableCell>In Queue</TableCell>
-              <TableCell>Priority</TableCell>
-              <TableCell>Yesterday</TableCell>
-            </TableRow>
-            <TableRow className="h-16 bg-gray-100 hover:bg-purple-50">
-              <TableCell>Kharl</TableCell>
-              <TableCell>Landing page</TableCell>
-              <TableCell>In Queue</TableCell>
-              <TableCell>Priority</TableCell>
-              <TableCell>Yesterday</TableCell>
-            </TableRow>
-            <TableRow className="h-16 hover:bg-purple-50">
-              <TableCell>Kharl</TableCell>
-              <TableCell>Landing page</TableCell>
-              <TableCell>In Queue</TableCell>
-              <TableCell>Priority</TableCell>
-              <TableCell>Yesterday</TableCell>
-            </TableRow>
-            <TableRow className="h-16 bg-gray-100 hover:bg-purple-50">
-              <TableCell>Kharl</TableCell>
-              <TableCell>Landing page</TableCell>
-              <TableCell>In Queue</TableCell>
-              <TableCell>Priority</TableCell>
-              <TableCell>Yesterday</TableCell>
+              <TableCell className="">
+                <Button
+                  size="icon"
+                  variant="ghost"
+                >
+                  ...
+                </Button>
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
